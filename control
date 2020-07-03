@@ -1,0 +1,13 @@
+Source: lmod
+Section: admin
+Priority: optional
+Maintainer: Hakan Saplakoglu <hakansaplakog@gmail.com>
+Build-Depends: debhelper-compat (= 12), lua-posix-dev, lua-filesystem-dev, liblua5.1-0-dev, lua5.1, tcl-dev
+Standards-Version: 4.4.1
+Homepage: https://lmod.readthedocs.io/en/latest/
+Vcs-Git: https://github.com/TACC/Lmod
+
+Package: lmod
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, lua-posix, lua-filesystem, liblua5.1-0, lua5.1, tcl
+Description: Lmod lua-based environment module
